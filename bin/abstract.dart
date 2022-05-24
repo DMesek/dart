@@ -27,11 +27,26 @@ class Platypus extends Animal {
   }
 }
 
+class Toucan extends Animal {
+  @override
+  void eat() {
+    // TODO: implement eat
+    print('lkjdsnakdn');
+  }
+
+  @override
+  void move() {
+    // TODO: implement move
+    print('fly');
+  }
+}
+
 void main() {
-  final platypus = Platypus();
-  print(platypus.isAlive);
-  platypus.eat();
-  platypus.move();
-  platypus.layEggs();
-  print(platypus);
+  final Animal platypus = Platypus();
+  final Animal toucan = Toucan();
+
+  final animals = [platypus, toucan];
+  for (var animal in animals) {
+    animal.eat();
+  }
 }

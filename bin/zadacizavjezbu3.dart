@@ -1,4 +1,4 @@
-import 'FoodType.dart';
+import 'food_type.dart';
 
 void main() {
   Car myNormalCar = Car();
